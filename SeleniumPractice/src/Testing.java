@@ -1,15 +1,24 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Testing {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
 		
 		
+		
+//		driver.get("https://www.worldometers.info/world-population/");
+//		System.out.println(driver.getTitle());
+//		driver.close();
+//		System.out.println(driver.getTitle());
+
 		
 //		FOR Printing the value on console for 20 sec
 		
